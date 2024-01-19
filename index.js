@@ -1,13 +1,11 @@
-let content = "I Hate You😭";
-
-
+let content = 'I Hate You😭'
 
 let btn = document.querySelector('.share-btn')
 console.log(btn)
 
-
-
-btn.addEventListener('click', ()=>{
-    let whatsappUrl = "whatsapp://send?text="+encodeURIComponent(content)
+btn.addEventListener('click', () => {
+  for (let i = 0; i < 1000; i++) {
+    let whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent(content)
     window.location.href = whatsappUrl
+  }
 })
